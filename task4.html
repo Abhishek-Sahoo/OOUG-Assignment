@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+
+<body>
+    <form action="task2.html" onsubmit="return verifyForm();">
+        <input type="email" id="email" placeholder="Enter E-mail">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function verifyForm() {
+            var userName = document.getElementById("email");
+            if (userName.value == "xyz@gmail.com") {
+                return true;
+            } else {
+                window.alert("Invalid Input");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

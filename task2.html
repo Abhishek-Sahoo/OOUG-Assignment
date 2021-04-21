@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+
+    <h3><a id="clicks">0</a></h3>
+    <button type="button" onclick="onDec()"> - </button>
+    <button type="button" onclick="onInc()"> + </button>
+
+    <script>
+        var clicks = 0;
+
+        function onInc() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+
+        function onDec() {
+            clicks -= 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+    </script>
+</body>
+
+</html>
